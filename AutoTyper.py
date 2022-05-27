@@ -6,12 +6,13 @@ import random
 
 char_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","w","x","y","z"]
 
-words = ["qwe", "qwer", "asd", "as", "zxc", "asdf", "qw", "qqq", "gfjh", "enytu", "ertyj", "luiuykt","wefyguqjn",
- "dsds", "gfhghf","sfbthyt","wqef","uyil","weqr","dsaf","ewrq","zxc","dghk","asdas","etyj","yuit","jhfk"]
+words = ["qwe", "qwer", "wreq", "ewrq", "weqr", "asd", "as", "zxc", "xzvc" "asdf", "qw", "qqq", "gfjh", "enytu", "ertyj", "luiuykt",
+    "wefyguqjn", "dsds", "gfhghf","sfbthyt","wqef","uyil","dsaf","dghk","asdas","etyj","yuit","jhfk", "jkçl","jklç", "jçkl", "wwww",
+    "sadf","hgkj","tyru", "bnm","vbnm", "vbmn", "vcbn", "bnvm","uoiy","uyio"]
 
 
 # variaveis de tempo
-c = 70
+c = 71
 m = 82
 l = 122
 ll = 215
@@ -22,7 +23,7 @@ print('''
     _         _        _____
    / \  _   _| |_ ___ |_   __   _ _ __   ___ _ __
   / _ \| | | | __/ _ \  | || | | | '_ \ / _ | '__|
- / ___ | |_| | || (_)   | || |_| | |_) |  __| |
+ / ___ | |_| | || (_) | | || |_| | |_) |  __| |
 /_/   \_\__,_|\__\___/  |_| \__, | .__/ \___|_|
                             |___/|_|
 
@@ -31,13 +32,24 @@ print('''
 
 ''')
 
+print("Total words in the list: ", len(words))
+
+print("\nThe Auto Typer is running...")
 
 
-print("The Auto Typer is running...")
+def countDown(s):
+    print(f"Starting typing in {s} seconds...")
+    for i in range(s, 0, -1):
+        print(i)
+        time.sleep(1)
+
+
+countDown(15)
+
 
 while True:
 
-    time.sleep(15)
+
     keyboard.write(random.choice(words))
     time.sleep(1)
     keyboard.press("Enter")
@@ -90,5 +102,5 @@ while True:
     time.sleep(1)
     keyboard.press("Enter")
     time.sleep(50)
-    print("Restarting cycle...")
+    print("\nRestarting cycle...")
 
