@@ -6,9 +6,10 @@ import random
 
 char_list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","w","x","y","z"]
 
-words = ["qwe", "qwer", "wreq", "ewrq", "weqr", "asd", "as", "zxc", "xzvc" "asdf", "qw", "qqq", "gfjh", "enytu", "ertyj", "luiuykt",
+words = ["asd", "as","asdf", "qwe", "qwer", "wreq", "ewrq", "weqr", "qw", "qqq", "gfjh", "enytu", "ertyj", "luiuykt",
     "wefyguqjn", "dsds", "gfhghf","sfbthyt","wqef","uyil","dsaf","dghk","asdas","etyj","yuit","jhfk", "jkçl","jklç", "jçkl", "wwww",
-    "sadf","hgkj","tyru", "bnm","vbnm", "vbmn", "vcbn", "bnvm","uoiy","uyio"]
+    "sadf","hgkj","hjkg", "tyru", "bnm","vbnm", "vbmn", "vcbn", "bnvm","uoiy","uyio","xzvc", "zxc"]
+
 
 
 # variaveis de tempo
@@ -16,6 +17,19 @@ c = 71
 m = 82
 l = 122
 ll = 215
+
+
+
+# Verificar duplicados na lista words
+uwords = []
+
+for i in words:
+    if i not in uwords:
+        uwords.append(i)
+    
+
+
+
 
 
 print('''
@@ -33,8 +47,26 @@ print('''
 ''')
 
 print("Total words in the list: ", len(words))
-
+print("Duplicate words found: ", len(words)-len(uwords))
 print("\nThe Auto Typer is running...")
+
+
+
+def random_printing():
+    r = random.choice(words)
+    print(f"printing {r} in 3 seconds...")
+    time.sleep(3)
+    keyboard.write(r)
+    time.sleep(1)
+    keyboard.press("Enter")
+
+
+def static_printing(word):
+    print(f"printing {word} in 3 seconds...")
+    time.sleep(3)
+    keyboard.write(word)
+    time.sleep(1)
+    keyboard.press("Enter")
 
 
 def countDown(s):
@@ -50,33 +82,19 @@ countDown(15)
 while True:
 
 
-    keyboard.write(random.choice(words))
-    time.sleep(1)
-    keyboard.press("Enter")
+    random_printing()
     time.sleep(c)
-    keyboard.write("dfghf")
-    time.sleep(1)
-    keyboard.press("Enter")
+    static_printing("dfghf")
     time.sleep(m)
-    keyboard.write("qwer")
-    time.sleep(1)
-    keyboard.press("Enter")
+    static_printing("qwer")
     time.sleep(m)
-    keyboard.write("qw")
-    time.sleep(1)
-    keyboard.press("Enter")
+    static_printing("qw")
     time.sleep(l)
-    keyboard.write("qw")
-    time.sleep(1)
-    keyboard.press("Enter")
+    static_printing("qw")
     time.sleep(ll)
-    keyboard.write("asd")
-    time.sleep(1)
-    keyboard.press("Enter")
+    static_printing("asd")
     time.sleep(m)
-    keyboard.write(random.choice(words))
-    time.sleep(1)
-    keyboard.press("Enter")
+    random_printing()
     time.sleep(c)
     keyboard.write(random.choice(char_list))
     time.sleep(1)
@@ -86,21 +104,15 @@ while True:
     time.sleep(1)
     keyboard.press("Enter")
     time.sleep(m)
-    keyboard.write("er")
-    time.sleep(1)
-    keyboard.press("Enter")
+    static_printing("er")
     time.sleep(m)
-    keyboard.write(random.choice(words))
-    time.sleep(1)
-    keyboard.press("Enter")
+    random_printing()
     time.sleep(c)
-    keyboard.write("as")
-    time.sleep(1)
-    keyboard.press("Enter")
+    static_printing("as")
     time.sleep(c)
     keyboard.write(random.choice(char_list))
     time.sleep(1)
     keyboard.press("Enter")
-    time.sleep(50)
+    time.sleep(62)
     print("\nRestarting cycle...")
 
