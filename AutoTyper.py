@@ -10,8 +10,9 @@ words = ["asd", "as","asdf", "qwe", "qwer", "wreq", "ewrq", "weqr", "qw", "qqq",
     "wefyguqjn", "dsds", "gfhghf","sfbthyt","wqef","uyil","dsaf","dghk","asdas","etyj","yuit","jhfk", "jkçl","jklç", "jçkl", "jkçhçkjlk",
     "çkljhjççjkl", "wwww", "sadf","hgkj","hjkg", "tyru", "bnm","vbnm", "vbmn", "vcbn", "bnvm","uoiy","uyio","xzvc", "zxc"]
 
-words2 = ["gfjh", "gfhghf", "hgkj","hjkg", "jhfk", "jkçl","jklç", "jçkl", "jkçhçkjlk", "kjlºçlkºj","hgjlkçl",
-    "çkljhjççjkl", "bnvmv", "bnm", "vbnm", "vbmn", "vcbn", "bnvm", "kjlççkljº","jljkºllçk", "jklçklj"]
+words2 = ["gfhghf", "hgkj","hjkg", "jkhl", "jhfk", "jkçl","jklç", "jçkl", "jkçhlkj", "kljççlk", "jkçhçkjlk", "kjlçlkºj","hgjlkçl", "hkjçlkjhkj",
+    "çkljhjççjkl", "fxgjxhddh", "bnvmv", "bnm", "vbnm", "vbmn", "vcbn", "bnvm","vnbmnbv", "kjlççkljº","jljkºllçk", "jklçklj", "kjlçkjl", "klçlj",
+    "bmnvvm","jhkll","kjlºjk"]
 
 # variaveis de tempo
 c = 71
